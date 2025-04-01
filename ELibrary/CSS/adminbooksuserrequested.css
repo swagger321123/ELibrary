@@ -1,0 +1,103 @@
+﻿/* General Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Table Styles */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Badge Styles */
+.badge {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-secondary.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Search Bar Styles */
+/*.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group .form-control {
+    border-radius: 4px 0 0 4px;
+}
+
+.input-group .btn {
+    border-radius: 0 4px 4px 0;
+}*/
+
+/* Search Bar Styles */
+.input-group {
+    max-width: 900px;
+    min-width: 600px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input-group .form-control {
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-group .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+/* No Results Message */
+.alert-info {
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+}

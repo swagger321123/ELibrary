@@ -1,0 +1,112 @@
+﻿/* Card Styles */
+.card {
+    position: relative;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/*.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+    z-index: 1;
+}*/
+
+.card:hover .card-description {
+    transform: translateY(0);
+}
+
+/* Button Styles */
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+}
+
+/* Search Bar Styles */
+/*.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group .form-control {
+    border-radius: 4px 0 0 4px;
+}
+
+.input-group .btn {
+    border-radius: 0 4px 4px 0;
+}
+*/
+
+/* Search Bar Styles */
+.input-group {
+    max-width: 800px;
+    min-width: 280px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input-group .form-control {
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-group .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+/* No Results Message */
+.alert-info {
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
